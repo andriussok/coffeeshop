@@ -1,0 +1,119 @@
+.
+├── 404.html
+├── README.md
+├── index.html
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── public
+│   ├── bg-coffee.jpg
+│   └── images
+│       ├── H8Y5Sgj.webp
+│       ├── H8Y71TB.webp
+│       ├── H8Y78Qt.webp
+│       ├── H8Y7EhP.webp
+│       ├── H8Y7GQ1.webp
+│       ├── H8Y7NvR.webp
+│       ├── H8Y7Opp.webp
+│       ├── H8Y7UCX.webp
+│       ├── H8Y7VCF.webp
+│       ├── H8Y7WEg.webp
+│       ├── H8Y7X4a.webp
+│       ├── H8Y7aYx.webp
+│       ├── H8Y7ckQ.webp
+│       ├── H8Y7gGn.webp
+│       ├── H8Y7j3J.webp
+│       ├── H8Y7kTN.webp
+│       ├── H8Y7lpV.webp
+│       ├── H8Y7r4s.webp
+│       ├── H8Y7vjI.webp
+│       └── H8Y7wYv.webp
+├── result.txt
+├── src
+│   ├── App.vue
+│   ├── admin
+│   │   ├── AdminDashboard.vue
+│   │   ├── components
+│   │   │   ├── AdminSearchBar.vue
+│   │   │   └── AdminSidebar.vue
+│   │   └── views
+│   │       ├── AdminOrders.vue
+│   │       └── AdminUsers.vue
+│   ├── assets
+│   │   └── bolt.svg
+│   ├── components
+│   │   ├── BagComponent.vue
+│   │   ├── Newsletter.vue
+│   │   ├── ProductCard.vue
+│   │   ├── ProductFilter.vue
+│   │   ├── ProductFilterModal.vue
+│   │   ├── ProductList.vue
+│   │   ├── ProductSwiper.vue
+│   │   ├── ReviewFormModal.vue
+│   │   ├── Reviews.vue
+│   │   ├── Testimonials.vue
+│   │   ├── account
+│   │   │   ├── MyReviews.vue
+│   │   │   ├── Orders.vue
+│   │   │   ├── PaymentMethod.vue
+│   │   │   ├── Profile.vue
+│   │   │   ├── Settings.vue
+│   │   │   └── Wishlist.vue
+│   │   └── common
+│   │       ├── Breadcrumbs.vue
+│   │       ├── Footer.vue
+│   │       ├── Header.vue
+│   │       ├── Pagination.vue
+│   │       ├── Toast.vue
+│   │       ├── ToastContainer.vue
+│   │       └── TopBar.vue
+│   ├── main.js
+│   ├── router
+│   │   ├── index.js
+│   │   └── modules
+│   │       ├── accountRoutes.js
+│   │       ├── adminRoutes.js
+│   │       └── websiteRoutes.js
+│   ├── services
+│   │   ├── api.js
+│   │   ├── localdata
+│   │   │   ├── apidata.js
+│   │   │   └── localdata.js
+│   │   └── server.js
+│   ├── store
+│   │   ├── index.js
+│   │   └── modules
+│   │       ├── admin
+│   │       │   ├── adminOrders.js
+│   │       │   └── adminUsers.js
+│   │       ├── auth.js
+│   │       ├── cart.js
+│   │       ├── checkout.js
+│   │       ├── orders.js
+│   │       ├── products.js
+│   │       ├── reviews.js
+│   │       ├── toast.js
+│   │       └── user.js
+│   ├── style.css
+│   ├── utils
+│   │   ├── filterUtils.js
+│   │   ├── productUtils.js
+│   │   └── toastUtils.js
+│   └── views
+│       ├── Cart.vue
+│       ├── Checkout.vue
+│       ├── Company.vue
+│       ├── Contact.vue
+│       ├── Home.vue
+│       ├── OrderSummary.vue
+│       ├── Product.vue
+│       ├── Products.vue
+│       └── account
+│           ├── AccountDashboard.vue
+│           ├── Signin.vue
+│           ├── Signout.vue
+│           └── Signup.vue
+├── tailwind.config.js
+└── vite.config.js
+
+21 directories, 96 files

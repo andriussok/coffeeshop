@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-coffee {
+  background-image: url('/bg-coffee.jpg');
+  background-position: top 20% center;
+  background-size: cover;
+}

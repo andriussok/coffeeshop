@@ -13,8 +13,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  // history: createWebHistory('/coffeeshop/'), // set the base
-  history: createWebHistory(''),
+  history: createWebHistory(process.env.NODE_ENV === 'production' ? '/coffeeshop/' : '/'),
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {

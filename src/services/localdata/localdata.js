@@ -1,4 +1,4 @@
-const localdata = [
+const rawLocalData = [
   {
       "_id": "6424335b59f9f6fdd657d2e1",
       "id": 1,
@@ -415,6 +415,16 @@ const localdata = [
       "roast_level": 2,
       "image_url": "/images/H8Y7EhP.webp"
   }
-]
+];
+
+function resolveAssetPath(relativePath) {
+  const baseUrl = import.meta.env.BASE_URL || '/';
+  return `${baseUrl}${relativePath.startsWith('/') ? relativePath.slice(1) : relativePath}`;
+}
+
+const localdata = rawLocalData.map(product => ({
+  ...product,
+  image_url: resolveAssetPath(product.image_url),
+}));
 
 export default localdata

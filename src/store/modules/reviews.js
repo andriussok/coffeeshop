@@ -21,7 +21,7 @@ const mutations = {
     state.reviews[review.productId].push(review);
   },
   UPDATE_REVIEW(state, review) {
-    if (state.reviews[productId]) {
+    if (state.reviews[review.productId]) {
       const index = state.reviews[review.productId].findIndex(r => r.id === review.id);
       if (index !== -1) {
         state.reviews[review.productId].splice(index, 1, review);

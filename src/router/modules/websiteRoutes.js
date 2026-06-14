@@ -22,28 +22,24 @@ const websiteRoutes = [
   { 
     path: '/checkout',
     component: Checkout,
-    beforeEnter: (to, from, next) => {
+    beforeEnter: () => {
       // Check if there are products in the cart
       const store = useStore();
       const userCart = store.getters['cart/userCart'];
       if (userCart.length === 0) {
-        next('/cart'); // Redirect to cart page if the cart is empty
-      } else {
-        next(); // Proceed to checkout if the cart has items
+        return '/cart'; // Redirect to cart page if the cart is empty
       }
     },
   },
   { 
     path: '/order-summary',
     component: OrderSummary,
-    beforeEnter: (to, from, next) => {
+    beforeEnter: () => {
       // Check if there is order in the cart
       const store = useStore();
       const checkoutSuccess = store.getters['checkout/checkoutSuccess'];
       if (!checkoutSuccess) {
-        next('/'); // Redirect to homepage
-      } else {
-        next(); // Proceed to order-summary
+        return '/'; // Redirect to homepage
       }
     },
   },

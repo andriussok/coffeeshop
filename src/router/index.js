@@ -29,12 +29,10 @@ const router = createRouter({
   },
 });
 
-router.beforeEach((to, from, next) => {
+router.beforeEach((to) => {
   const store = useStore();
   if (to.path.startsWith('/account') && !store.getters['auth/isSignedIn']) {
-    next('/signin');
-  } else {
-    next();
+    return '/signin';
   }
 });
 

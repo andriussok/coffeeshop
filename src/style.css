@@ -1,6 +1,27 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+.bg-gray-500.bg-opacity-75 {
+  background-color: color-mix(in oklab, var(--color-gray-500) 75%, transparent);
+}
+
+.bg-black.bg-opacity-25 {
+  background-color: color-mix(in oklab, #000 25%, transparent);
+}
+
+.ring-black.ring-opacity-5 {
+  --tw-ring-color: color-mix(in oklab, #000 5%, transparent);
+}
 
 .bg-coffee {
   background-image: url('/bg-coffee.jpg');

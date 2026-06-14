@@ -1,6 +1,6 @@
 <template>
-  <div class="swiper-container">
-    <swiper v-bind="swiperOptions" class="py-5 px-3">
+  <div class="swiper-container py-5 px-3">
+    <swiper v-bind="swiperOptions">
       <swiper-slide v-for="product in featuredProducts" :key="product.id">
         <ProductCard
           :product="product"

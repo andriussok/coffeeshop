@@ -1,23 +1,23 @@
+
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import path from 'path';
+import path from 'node:path'
 
-const base = process.env.NODE_ENV === 'production' ? '/coffeeshop/' : '/';
+const base = process.env.NODE_ENV === 'production' ? '/coffeeshop/' : '/'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  base: base,
+  base,
   plugins: [vue()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src/'),
-      '@app-admin': path.resolve(__dirname, './src/admin'),
-      '@app-assets': path.resolve(__dirname, './src/assets'),
-      '@app-components': path.resolve(__dirname, './src/components'),
-      '@app-utils': path.resolve(__dirname, './src/utils'),
-      '@app-views': path.resolve(__dirname, './src/views'),
-      '@app-services': path.resolve(__dirname, './src/services'),
-      '@app-store': path.resolve(__dirname, './src/store'),
+      '@': path.resolve(import.meta.dirname, './src/'),
+      '@app-admin': path.resolve(import.meta.dirname, './src/admin'),
+      '@app-assets': path.resolve(import.meta.dirname, './src/assets'),
+      '@app-components': path.resolve(import.meta.dirname, './src/components'),
+      '@app-utils': path.resolve(import.meta.dirname, './src/utils'),
+      '@app-views': path.resolve(import.meta.dirname, './src/views'),
+      '@app-services': path.resolve(import.meta.dirname, './src/services'),
+      '@app-store': path.resolve(import.meta.dirname, './src/store'),
     },
   },
 })
